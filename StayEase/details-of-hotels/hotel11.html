@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekam Villa - Chail</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: 400;
+            letter-spacing: 1.8px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .gallery img:first-child {
+            grid-row: span 2;
+            height: 450px;
+        }
+        .gallery img{
+            height: 220px;
+        }
+
+        .full-detail {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .details {
+            margin-top: 20px;
+        }
+
+        .details p {
+            font-size: 1.2rem;
+            padding: 3px;
+        }
+
+        .host {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .price-box {
+
+            width: 30%;
+            height: 180px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .reserve-btn {
+            background: #ff385c;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            text-decoration: none;
+            margin-top: 30px;
+        }
+
+        .reserve-btn:hover {
+            background-color: #eb3355;
+        }
+
+        
+        /* about-this-place */
+
+        .about-this-place {
+            margin-bottom: 30px;
+        }
+
+        .about-this-place h2 {
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .about-this-place p {
+            letter-spacing: 1px;
+            line-height: 20px;
+            margin-top: 12px;
+        }
+        /* reviews */
+
+        .reviews-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .review {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+
+        .review-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .review-header img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .reviewer-info {
+            font-size: 14px;
+        }
+
+        .reviewer-name {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .review-text {
+            font-size: 17px;
+            letter-spacing: 1px;
+            color: #333;
+        }
+
+        .show-more {
+            color: black;
+            font-size: 20px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Premium Room | Mountain View | Couple Friendly</div>
+        <div class="gallery">
+            <img src="/StayEase/images/hotel11.jpg" alt="Villa Image">
+            <img src="/StayEase/images/hotel3-Bedroom.jpg" alt="Library">
+            <img src="/StayEase/images/hotel3-full-bathroom.jpg" alt="Night View">
+            <img src="/StayEase/images/hotel3-additional-photo.jpg" alt="Living Room">
+            <img src="/StayEase/images/hotel3-Exterior.jpg" alt="Outdoor Pizza">
+        </div>
+
+        <div class="full-detail">
+
+            <div class="details">
+                <p><strong>Room in Kasauli, India</strong></p>
+                <p>1 king bedPrivate attached bathroom</p>
+                <p>⭐ 5.0 · 4 reviews</p>
+                <div class="host">
+                    <img src="/StayEase/images/hotel1-host.jpg" alt="Host" width="50" height="50" style="border-radius:50%;">
+                    <div>
+                        <p>Hosted by Parul</p>
+                        <p>9 months hosting</p>
+                    </div>
+                </div>
+            </div>
+            <div class="price-box">
+                <p><s>₹60,000</s> <strong>₹36,000</strong> per night</p>
+                <label>Check-in: <input type="date"></label><br>
+                <label>Checkout: <input type="date"></label><br>
+                <label>Guests: <input type="number" value="1" min="1"></label>
+                <a href="#" class="reserve-btn">Reserve</a>
+            </div>
+        </div>
+        <div class="about-this-place">
+            <h2> About this place</h2>
+            <p>Wonder Hill Kasauli is set in Kasauli. The property features mountain views.  Guest can use  free WiFi and free private parking.
+
+            </p>
+
+            <p>Some accommodation includes a balcony and a satellite flat-screen TV, as well as air conditioning and heating. At the bed and breakfast, units include a private bathroom..</p>
+
+            <p>A car rental service is available at the bed and breakfast which is on chargeable basis.</p>
+
+            <p>The nearest airport is Chandigarh Airport, 56 km from Wonder Hill Kasauli.</p>
+        </div>
+    </div>
+
+    <!-- reviews -->
+
+    <div class="reviews-container">
+        <div class="review">
+
+            <div class="review-header">
+                <img src="/StayEase/images/Profile1.jpg" alt="Nirav">
+                <div class="reviewer-info">
+                    <div class="reviewer-name">Nirav</div>
+                    <div>10 years on StayEase</div>
+                </div>
+            </div>
+            <div class="review-text">
+                <strong>★★★★★ · April 2024</strong>
+                <p>Words won't be enough to praise this villa! Loaded with all amenities...</p>
+                <a href="#" class="show-more">Show more</a>
+            </div>
+        </div>
+        <div class="review">
+            <div class="review-header">
+                <img src="/StayEase/images/Profile2.jpg" alt="Mithil">
+                <div class="reviewer-info">
+                    <div class="reviewer-name">Mithil</div>
+                    <div>6 years on StayEase</div>
+                </div>
+            </div>
+            <div class="review-text">
+                <strong>★★★★★ · December 2022</strong>
+                <p>Our stay at Ekam was nothing short of extraordinary. From the moment...</p>
+                <a href="#" class="show-more">Show more</a>
+            </div>
+        </div>
+        <div class="review">
+            <div class="review-header">
+                <img src="/StayEase/images/Profile3.jpg" alt="Rasika">
+                <div class="reviewer-info">
+                    <div class="reviewer-name">Rasika</div>
+                    <div>8 years on StayEase</div>
+                </div>
+            </div>
+            <div class="review-text">
+                <strong>★★★★★ · December 2022</strong>
+                <p>I would really like to take a moment to appreciate their prompt responses...</p>
+                <a href="#" class="show-more">Show more</a>
+            </div>
+        </div>
+        <div class="review">
+            <div class="review-header">
+                <img src="/StayEase/images/Profile4.jpg" alt="Manisha">
+                <div class="reviewer-info">
+                    <div class="reviewer-name">Manisha</div>
+                    <div>3 years on StayEase</div>
+                </div>
+            </div>
+            <div class="review-text">
+                <strong>★★★★★ · December 2022</strong>
+                <p>The place has a lot to offer like bonfire, organic meals, home garden...</p>
+                <a href="#" class="show-more">Show more</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
